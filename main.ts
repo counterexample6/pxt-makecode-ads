@@ -32,9 +32,10 @@ namespace freemium {
 			}
 
 			const text = "Credits: " + creditBalance;
-			const x = screen.width - text.length * 5 - 2;
+			const textWidth = text.length * 6;
+			const x = screen.width - textWidth - 8;
 			const y = screen.height - 10;
-			target.fillRect(x - 1, y - 1, text.length * 5 + 2, 8, 15);
+			target.fillRect(x - 1, y - 1, textWidth + 2, 8, 15);
 			target.print(text, x, y, 2);
 		});
 	}
